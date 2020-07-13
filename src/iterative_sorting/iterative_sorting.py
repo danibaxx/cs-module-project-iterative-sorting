@@ -26,9 +26,16 @@ print(selection_sort(numbs))
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
     # Your code here
-
+    for i in range(len(arr)-1,0,-1):
+        for x in range(i):
+            if arr[x] > arr[x+1]:
+                swap = arr[x]
+                arr[x] =arr[x+1]
+                arr[x+1] = swap
 
     return arr
+numbs2 = [5, 0, 1, 3, 4, 2]
+print(bubble_sort(numbs2))
 
 '''
 STRETCH: implement the Counting Sort function below
